@@ -66,6 +66,5 @@ Every list container has its own activity
 Most important features:
 Use the application withuot clicking (Google assistant, In-app audio recognition)
 
-
-
-
+For the ones who want to contribute to this project:
+Follow below link to read nameing conventions for branches, Coding Standards to follow
