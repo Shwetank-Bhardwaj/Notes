@@ -5,6 +5,11 @@ Database: Room
 
 Language: Java
 
+Things to use:
+Data binding
+RxJava
+Schedulers
+
 Features:
 
 List:
