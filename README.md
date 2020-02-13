@@ -1,7 +1,7 @@
 # Notes
 Architecture: MVVM Architecture
 
-Database: Room (Wrapper over SQLite)
+Database: Room
 
 Language: Java
 
