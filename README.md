@@ -2,6 +2,7 @@
 Architecture: MVVM Architecture
 
 Database: Room
+Study Material - https://medium.com/mindorks/using-room-database-android-jetpack-675a89a0e942
 
 Language: Java
 
