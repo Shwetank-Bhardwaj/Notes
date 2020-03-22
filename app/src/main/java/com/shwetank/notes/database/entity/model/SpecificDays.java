@@ -1,4 +1,4 @@
-package com.shwetank.notes;
+package com.shwetank.notes.database.entity.model;
 /*
  * Copyright 2020  Shwetank Bhardwaj,
  *
@@ -19,15 +19,16 @@ package com.shwetank.notes;
  * @version March 2020
  */
 
-import android.os.Bundle;
+import com.shwetank.notes.database.entity.constants.Days;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class SpecificDays {
+    private Days days;
 
-public class MainActivity extends AppCompatActivity {
+    public Days getDays() {
+        return days;
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void setDays(Days days) {
+        this.days = days;
     }
 }

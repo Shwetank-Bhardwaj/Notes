@@ -1,4 +1,4 @@
-package com.shwetank.notes;
+package com.shwetank.notes.database.entity.model;
 /*
  * Copyright 2020  Shwetank Bhardwaj,
  *
@@ -19,15 +19,25 @@ package com.shwetank.notes;
  * @version March 2020
  */
 
-import android.os.Bundle;
+import com.shwetank.notes.database.entity.constants.MinToYear;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class AdvancedRepeat {
+    private int repeatNumber;
+    private MinToYear minToYear;
 
-public class MainActivity extends AppCompatActivity {
+    public int getRepeatNumber() {
+        return repeatNumber;
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void setRepeatNumber(int repeatNumber) {
+        this.repeatNumber = repeatNumber;
+    }
+
+    public MinToYear getMinToYear() {
+        return minToYear;
+    }
+
+    public void setMinToYear(MinToYear minToYear) {
+        this.minToYear = minToYear;
     }
 }

@@ -1,4 +1,4 @@
-package com.shwetank.notes;
+package com.shwetank.notes.database.entity;
 /*
  * Copyright 2020  Shwetank Bhardwaj,
  *
@@ -19,15 +19,35 @@ package com.shwetank.notes;
  * @version March 2020
  */
 
-import android.os.Bundle;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-import androidx.appcompat.app.AppCompatActivity;
+import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+@Entity
+public class SubListEntity {
+    @PrimaryKey(autoGenerate = true)
+    private int uid;
+    private String title;
+    private List<Integer> taskIds;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int getUid() {
+        return uid;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public List<Integer> getTaskIds() {
+        return taskIds;
+    }
+
+    public void setTaskIds(List<Integer> taskIds) {
+        this.taskIds = taskIds;
     }
 }

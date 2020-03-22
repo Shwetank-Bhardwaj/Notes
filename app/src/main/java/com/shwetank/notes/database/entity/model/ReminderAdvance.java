@@ -1,4 +1,4 @@
-package com.shwetank.notes;
+package com.shwetank.notes.database.entity.model;
 /*
  * Copyright 2020  Shwetank Bhardwaj,
  *
@@ -19,15 +19,25 @@ package com.shwetank.notes;
  * @version March 2020
  */
 
-import android.os.Bundle;
+import com.shwetank.notes.database.entity.constants.MinToYear;
 
-import androidx.appcompat.app.AppCompatActivity;
+public class ReminderAdvance {
+    private int limit;
+    private MinToYear reminderLength;
 
-public class MainActivity extends AppCompatActivity {
+    public int getLimit() {
+        return limit;
+    }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void setLimit(int limit) {
+        this.limit = limit;
+    }
+
+    public MinToYear getReminderLength() {
+        return reminderLength;
+    }
+
+    public void setReminderLength(MinToYear reminderLength) {
+        this.reminderLength = reminderLength;
     }
 }
