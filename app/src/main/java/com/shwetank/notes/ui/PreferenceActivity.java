@@ -23,17 +23,13 @@
 
 package com.shwetank.notes.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-import com.shwetank.notes.R;
-
-public class PreferenceActivity extends AppCompatActivity {
+public class PreferenceActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_preference);
+    protected void doOnCreate(Bundle savedInstanceState) {
+        super.doOnCreate(savedInstanceState);
+
     }
 }

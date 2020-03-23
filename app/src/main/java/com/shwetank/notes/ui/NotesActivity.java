@@ -23,17 +23,13 @@
 
 package com.shwetank.notes.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
-import com.shwetank.notes.R;
-
-public class NotesActivity extends AppCompatActivity {
+public class NotesActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notes);
+    protected void doOnCreate(Bundle savedInstanceState) {
+        super.doOnCreate(savedInstanceState);
+
     }
 }

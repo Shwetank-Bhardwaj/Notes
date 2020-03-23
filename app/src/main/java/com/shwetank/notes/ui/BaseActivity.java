@@ -32,5 +32,102 @@ public class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        try {
+            doOnCreate(savedInstanceState);
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        try {
+            doOnStart();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        try {
+            doOnResume();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        try {
+            doOnPause();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        try {
+            doOnStop();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        try {
+            doOnRestart();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        try {
+            doOnDestroy();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    private void sendLog(Exception e) {
+        // TODO: 3/23/2020 Add Crashlytics and openExceptionDialog
+    }
+
+    protected void doOnCreate(Bundle savedInstanceState) {
+
+    }
+
+    private void doOnStart() {
+
+    }
+
+    private void doOnResume() {
+
+    }
+
+    private void doOnPause() {
+
+    }
+
+    private void doOnStop() {
+
+    }
+
+    private void doOnRestart() {
+
+    }
+
+    private void doOnDestroy() {
+
     }
 }

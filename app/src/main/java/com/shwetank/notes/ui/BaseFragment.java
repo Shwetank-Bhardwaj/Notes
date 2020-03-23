@@ -23,7 +23,132 @@
 
 package com.shwetank.notes.ui;
 
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class BaseFragment extends Fragment {
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        try {
+            doOnCreateView(inflater, container, savedInstanceState);
+        } catch (Exception e) {
+            sendLog(e);
+        }
+        return super.onCreateView(inflater, container, savedInstanceState);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        try {
+            doViewCreated(view, savedInstanceState);
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        try {
+            doOnCreate(savedInstanceState);
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        try {
+            doOnStart();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        try {
+            doOnResume();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        try {
+            doOnPause();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        try {
+            doOnStop();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        try {
+            doOnDestroy();
+        } catch (Exception e) {
+            sendLog(e);
+        }
+    }
+
+    private void sendLog(Exception e) {
+
+    }
+
+    private void doOnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+    }
+
+    private void doViewCreated(View view, Bundle savedInstanceState) {
+
+    }
+
+    private void doOnCreate(Bundle savedInstanceState) {
+
+    }
+
+    private void doOnStart() {
+
+    }
+
+    private void doOnResume() {
+
+    }
+
+    private void doOnPause() {
+
+    }
+
+    private void doOnStop() {
+
+    }
+
+    private void doOnDestroy() {
+
+    }
 }
