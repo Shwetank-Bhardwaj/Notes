@@ -21,6 +21,7 @@ allprojects {
     }
     ext{
         room_version = "2.2.5"
+        recyclerview_version = "1.1.0"
     }
 }
 
