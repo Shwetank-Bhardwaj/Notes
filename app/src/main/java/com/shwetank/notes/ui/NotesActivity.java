@@ -30,6 +30,5 @@ public class NotesActivity extends BaseActivity {
     @Override
     protected void doOnCreate(Bundle savedInstanceState) {
         super.doOnCreate(savedInstanceState);
-
     }
 }
